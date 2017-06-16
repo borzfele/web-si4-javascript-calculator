@@ -10,6 +10,11 @@ function main() {
         result = '';
         $('#result').text(result);
     });
+
+    $('#get_result').on('click', function() {
+        result = eval(result);
+        $('#result').text(result);
+    })
 }
 
 $(document).ready(main);
