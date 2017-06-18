@@ -11,9 +11,6 @@ function main() {
     });
 
     $('.operators').on('click', function(){
-        if (operator !== '') {
-            alert('You have used an operator already. Please insert a number.')
-        } else {
             if (result === ''){
                 formerNum = currentNum;
                 currentNum = '';
@@ -23,7 +20,6 @@ function main() {
                 currentNum = '';
                 operator = $(this).text();
             }
-        }
     });
 
     $('#get_result').on('click', function() {
