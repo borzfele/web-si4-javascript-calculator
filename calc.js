@@ -39,6 +39,11 @@ function main() {
         result = '';
         $('#result').text(result);
     });
+
+    $('#percent').on('click', function() {
+        currentNum = eval(currentNum + '/100');
+        $('#result').text(currentNum);
+    });
 }
 
 $(document).ready(main);
