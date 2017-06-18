@@ -31,6 +31,14 @@ function main() {
         formerNum = result;
         $('#result').text(result);
     });
+
+    $('#clear').on('click', function() {
+        formerNum = '';
+        currentNum = '';
+        operator = '';
+        result = '';
+        $('#result').text(result);
+    });
 }
 
 $(document).ready(main);
