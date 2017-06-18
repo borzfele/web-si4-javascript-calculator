@@ -11,14 +11,18 @@ function main() {
     });
 
     $('.operators').on('click', function(){
-        if (result === ''){
-            formerNum = currentNum;
-            currentNum = '';
-            operator = $(this).text();
+        if (operator !== '') {
+            alert('You have used an operator already. Please insert a number.')
         } else {
-            formerNum = result;
-            currentNum = '';
-            operator = $(this).text();
+            if (result === ''){
+                formerNum = currentNum;
+                currentNum = '';
+                operator = $(this).text();
+            } else {
+                formerNum = result;
+                currentNum = '';
+                operator = $(this).text();
+            }
         }
     });
 
